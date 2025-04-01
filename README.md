@@ -93,6 +93,7 @@ Ejemplos de software: navegadores web, clientes de correo, aplicaciones de mensa
 El **Modelo OSI** proporciona una estructura clara y organizada para entender cómo se comunican los sistemas de red. Cada capa cumple una función específica, permitiendo la interoperabilidad entre sistemas y facilitando el diseño, análisis y resolución de problemas en redes modernas.
 
 Comprender este modelo es fundamental para cualquier profesional de redes o tecnología.
+![Interpretación moderna_ Las 7 capas del Modelo OSI - visual selection](https://github.com/user-attachments/assets/376fdb0a-9c46-481b-b6a0-111c10c8c3e8)
 
 
 
