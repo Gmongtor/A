@@ -112,15 +112,20 @@ No garantiza entrega ni orden: A diferencia de TCP, UDP no asegura que los paque
 
 **¿Qué técnica de redes moderna se refleja en la leyenda del Guardián de la Máscara? Nombra y describe brevemente este mecanismo, explicando cómo permite que múltiples dispositivos internos de una red compartan una única identidad (dirección) al comunicarse con el exterior, y menciona dos beneficios que brinda esta estrategia a las redes actuales.**
 
-La técnica es **NAT (Network Address Translation)**.
+En este documento, exploraremos la técnica de redes conocida como NAT (Network Address Translation) y su relación con la leyenda del Guardián de la Máscara Única. NAT es un mecanismo que permite que múltiples dispositivos dentro de una red privada compartan una única dirección IP pública al comunicarse con el exterior. A través de esta técnica, se logran importantes beneficios que son esenciales para la gestión de redes en la actualidad.
 
-### Descripción:
-- NAT permite que múltiples dispositivos en una red privada (ej. 192.168.x.x) compartan una sola dirección IP pública al acceder a Internet.
-- El router reemplaza la IP privada con su IP pública al salir y mantiene una tabla para redirigir las respuestas al host correspondiente.
+### Descripción de NAT:
+
+NAT es un proceso que permite que varios dispositivos en una red privada, como las que utilizan direcciones IP en el rango 192.168.x.x, compartan una sola dirección IP pública cuando acceden a Internet. Este proceso es gestionado por un router que actúa como intermediario. Cuando un dispositivo interno envía una solicitud a Internet, el router reemplaza la dirección IP privada del dispositivo con su propia dirección IP pública. Además, el router mantiene una tabla de traducción que le permite redirigir las respuestas de vuelta al dispositivo correcto dentro de la red privada.
+
+![El Guardián de la Máscara Única_ NAT en la Era de las Redes Modernas - visual selection](https://github.com/user-attachments/assets/8659b61b-d422-4629-b8c8-8820e649b20e)
+
 
 ### Beneficios:
-1. **Conservación de direcciones IPv4 públicas**
-2. **Ocultamiento de la red interna, mejorando la seguridad**
+1. **Conservación de direcciones IPv4 públicas:** Dado que las direcciones IPv4 son limitadas y escasas, NAT permite que múltiples dispositivos utilicen una sola dirección IP pública, lo que ayuda a conservar el espacio de direcciones disponibles.
+2. **Ocultamiento de la red interna, mejorando la seguridad:** Al utilizar NAT, las direcciones IP internas no son visibles desde el exterior, lo que añade una capa de seguridad a la red. Esto dificulta que los atacantes puedan identificar y dirigirse a dispositivos específicos dentro de la red privada.
+
+![El Guardián de la Máscara Única_ NAT en la Era de las Redes Modernas - visual selection (1)](https://github.com/user-attachments/assets/2960d37e-53eb-48a8-b874-51cbd8480f12)
 
 
 
