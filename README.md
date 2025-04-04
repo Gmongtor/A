@@ -211,7 +211,11 @@ En esta misión, se ha reconstruido la antigua red de la ciudad utilizando VLANs
 
 ---
 
-### Topología Final
+### Topología
+
+![image](https://github.com/user-attachments/assets/8541e58e-9cfc-4540-b9e3-d2e79df3df2b)
+
+---
 
 **Dispositivos y VLANs configuradas:**
 
