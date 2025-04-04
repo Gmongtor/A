@@ -133,11 +133,11 @@ NAT es un proceso que permite que varios dispositivos en una red privada, como l
 
 ---
 
-##Ejercicio 1:
+## Ejercicio 1:
 
 ---
 
-##Ejercicio 2:
+## Ejercicio 2:
 
 
 
