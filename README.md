@@ -129,7 +129,7 @@ NAT es un proceso que permite que varios dispositivos en una red privada, como l
 
 ---
 
-# Parte 2: Cisco Packet Tracer
+# Parte II: Cisco Packet Tracer
 
 ---
 
