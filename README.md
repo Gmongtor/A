@@ -137,9 +137,54 @@ NAT es un proceso que permite que varios dispositivos en una red privada, como l
 
 ---
 
-## Ejercicio 2:
+## Ejercicio 2 - "Los Canales Secretos de la Red Perdida" 🌐
 
+### Introducción
 
+En esta misión, se ha reconstruido la antigua red de la ciudad utilizando VLANs para segmentar a los distintos gremios. El router central ha retomado el control de los canales secretos (redes) mediante subinterfaces, lo que ha permitido unir de nuevo a los Arquitectos, Escribas y al Servidor del Consejo.
+
+---
+
+### Topología Final
+
+**Dispositivos y VLANs configuradas:**
+
+| Dispositivo       | VLAN  | IP Address        | Función         |
+|-------------------|-------|-------------------|-----------------|
+| PC1, PC2, PC3      | 10    | 192.168.10.10-12  | Arquitectos     |
+| PC4, Smartphone0, Tablet0 | 20    | 192.168.20.10-21  | Escribas        |
+| Server0           | 99    | 192.168.99.10     | Servidor DHCP   |
+| Router0           | -     | Subinterfaces para cada VLAN | Router-on-a-stick |
+| Switch0           | -     | Trunk + Access Ports configurados | Switch central |
+---
+
+### 🔧 Configuración de VLANs en el Switch
+
+```bash
+enable
+configure terminal
+
+vlan 10
+ name Arquitectos
+vlan 20
+ name Escribas
+vlan 99
+ name Servidor
+
+interface range fa0/1 - 3
+ switchport mode access
+ switchport access vlan 10
+
+interface range fa0/5, fa0/7
+ switchport mode access
+ switchport access vlan 20
+
+interface range fa0/4, fa0/6
+ switchport mode access
+ switchport access vlan 99
+
+interface gigabitEthernet0/1
+ switchport mode trunk
 
 
 
