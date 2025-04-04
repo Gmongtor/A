@@ -158,7 +158,7 @@ En esta misión, se ha reconstruido la antigua red de la ciudad utilizando VLANs
 | Switch0           | -     | Trunk + Access Ports configurados | Switch central |
 ---
 
-### 🔧 Configuración de VLANs en el Switch
+### Configuración de VLANs en el Switch
 
 ```bash
 enable
@@ -185,6 +185,33 @@ interface range fa0/4, fa0/6
 
 interface gigabitEthernet0/1
  switchport mode trunk
+```
+### Configuración del Router
+```bash
+enable
+configure terminal
+
+interface GigabitEthernet0/0
+ no shutdown
+
+interface GigabitEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 192.168.10.1 255.255.255.0
+ ip helper-address 192.168.99.10
+
+interface GigabitEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 192.168.20.1 255.255.255.0
+ ip helper-address 192.168.99.10
+
+interface GigabitEthernet0/0.99
+ encapsulation dot1Q 99
+ ip address 192.168.99.1 255.255.255.0
+
+exit
+write memory
+
+```
 
 
 
