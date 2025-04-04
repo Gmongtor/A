@@ -127,6 +127,20 @@ NAT es un proceso que permite que varios dispositivos en una red privada, como l
 
 ![El Guardián de la Máscara Única_ NAT en la Era de las Redes Modernas - visual selection (1)](https://github.com/user-attachments/assets/2960d37e-53eb-48a8-b874-51cbd8480f12)
 
+---
+
+# Parte 2: Cisco Packet Tracer
+
+---
+
+##Ejercicio 1:
+
+---
+
+##Ejercicio 2:
+
+
+
 
 
 
