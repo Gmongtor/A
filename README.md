@@ -143,6 +143,8 @@ En este primer ejercicio del examen de redes, se reconstruyó la conexión entre
 
 ### Topología
 
+![image](https://github.com/user-attachments/assets/819517a1-b20c-45a0-9137-57ad11a90969)
+
 ---
 
 ### Direccionamiento IP
