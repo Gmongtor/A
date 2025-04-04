@@ -1,4 +1,5 @@
-# Examen de Redes II – Parte I: Conceptos y Teoría
+# Examen de Redes II – 
+Parte I: Conceptos y Teoría
 
 ---
 
@@ -17,6 +18,7 @@ El mural representa el **Modelo OSI (Open Systems Interconnection)**, que divide
 | 5    | Sesión             | Establecimiento, gestión y terminación de sesiones.                           |
 | 6    | Presentación       | Formato, compresión y cifrado de datos.                                       |
 | 7    | Aplicación         | Interfaz entre usuario y red (ej. HTTP, FTP, DNS).                            |
+![Interpretación moderna_ Las 7 capas del Modelo OSI - visual selection](https://github.com/user-attachments/assets/376fdb0a-9c46-481b-b6a0-111c10c8c3e8)
 
 ---
 
@@ -92,8 +94,6 @@ La técnica es **NAT (Network Address Translation)**.
 ### Beneficios:
 1. **Conservación de direcciones IPv4 públicas**
 2. **Ocultamiento de la red interna, mejorando la seguridad**
-
-![Interpretación moderna_ Las 7 capas del Modelo OSI - visual selection](https://github.com/user-attachments/assets/376fdb0a-9c46-481b-b6a0-111c10c8c3e8)
 
 
 
