@@ -88,17 +88,23 @@ No garantiza entrega ni orden: A diferencia de TCP, UDP no asegura que los paque
 
 **¿Qué concepto moderno de redes representa el tótem con flechas de la encrucijada? Explica qué es una tabla de enrutamiento y cómo funciona en un router actual. Además, interpreta la diferencia entre las flechas talladas en piedra y las flechas móviles en términos de enrutamiento estático vs. enrutamiento dinámico en redes.**
 
-El tótem representa una **tabla de enrutamiento**.
+#### Tabla de Enrutamiento
 
-- Una **tabla de enrutamiento** contiene rutas que indican al router por qué interfaz enviar un paquete según su destino IP.
+- Una tabla de enrutamiento es una estructura fundamental en el funcionamiento de los routers. Esta tabla contiene rutas que indican al router por qué interfaz debe enviar un paquete de datos, dependiendo de su dirección IP de destino. La correcta configuración y mantenimiento de esta tabla son esenciales para garantizar que los datos se transmitan de manera eficiente y efectiva a través de una red.
+
 
 | Tipo de enrutamiento | Descripción                               |
 |----------------------|--------------------------------------------|
 | Estático             | Rutas configuradas manualmente. Estables. |
 | Dinámico             | Rutas aprendidas automáticamente (RIP, OSPF). Se actualizan ante cambios. |
 
-- **Flechas talladas en piedra** → Rutas estáticas  
-- **Flechas móviles** → Rutas dinámicas
+#### Enrutamiento Estático vs Enrutamiento Dinámico
+
+Flechas talladas en piedra: Representan el enrutamiento estático, donde las rutas son configuradas manualmente por un administrador de red. Estas rutas son estables y no cambian a menos que se realice una intervención manual. Esto puede ser beneficioso en entornos donde las rutas son predecibles y no cambian con frecuencia.
+
+Flechas móviles: Simbolizan el enrutamiento dinámico, donde las rutas son aprendidas automáticamente por el router a través de protocolos de enrutamiento como RIP (Routing Information Protocol) o OSPF (Open Shortest Path First). Estas rutas se actualizan automáticamente en respuesta a cambios en la topología de la red, lo que permite una mayor flexibilidad y adaptabilidad en entornos de red más complejos.
+
+![La Encrucijada de las Rutas_ Un Análisis del Enrutamiento en Redes Modernas - visual selection](https://github.com/user-attachments/assets/0bb8efd5-f347-4cb9-829f-5998a0eb8dac)
 
 ---
 
