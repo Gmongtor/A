@@ -60,7 +60,7 @@ Bajo retardo: UDP permite una transmisión más rápida de datos al no requerir 
 
 No garantiza entrega ni orden: A diferencia de TCP, UDP no asegura que los paquetes lleguen a su destino ni que lo hagan en el orden correcto. Esto puede ser problemático en aplicaciones donde la secuenciación de los datos es importante.
 
-                   ![Comparación de Protocolos de Comunicación_ TCP y UDP - visual selection](https://github.com/user-attachments/assets/0c47532b-f9cd-4dcd-9e92-2c3d48056682)
+  ![Comparación de Protocolos de Comunicación_ TCP y UDP - visual selection](https://github.com/user-attachments/assets/0c47532b-f9cd-4dcd-9e92-2c3d48056682)
 
 
 ---
@@ -104,7 +104,7 @@ No garantiza entrega ni orden: A diferencia de TCP, UDP no asegura que los paque
 
 - **Flechas móviles:** Simbolizan el enrutamiento dinámico, donde las rutas son aprendidas automáticamente por el router a través de protocolos de enrutamiento como RIP (Routing Information Protocol) o OSPF (Open Shortest Path First). Estas rutas se actualizan automáticamente en respuesta a cambios en la topología de la red, lo que permite una mayor flexibilidad y adaptabilidad en entornos de red más complejos.
 
-              ![La Encrucijada de las Rutas_ Un Análisis del Enrutamiento en Redes Modernas - visual selection](https://github.com/user-attachments/assets/0bb8efd5-f347-4cb9-829f-5998a0eb8dac)
+ ![La Encrucijada de las Rutas_ Un Análisis del Enrutamiento en Redes Modernas - visual selection](https://github.com/user-attachments/assets/0bb8efd5-f347-4cb9-829f-5998a0eb8dac)
 
 ---
 
