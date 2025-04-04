@@ -133,8 +133,70 @@ NAT es un proceso que permite que varios dispositivos en una red privada, como l
 
 ---
 
-## Ejercicio 1:
+## Ejercicio 1 - Reconstrucción de Enlace Entre Ciudades
 
+### Introducción
+
+En este primer ejercicio del examen de redes, se reconstruyó la conexión entre dos ciudades (Ciudad A y Ciudad B), unidas por un enlace serial punto a punto. Se configuraron direcciones IP y rutas estáticas para garantizar la conectividad total entre los dispositivos de ambas redes.
+
+---
+
+### Topología
+
+---
+
+### Direccionamiento IP
+
+| Dispositivo | Interfaz        | Dirección IP     | Máscara           | Ciudad   |
+|-------------|------------------|------------------|-------------------|----------|
+| RouterA     | Gig0/0           | 192.168.1.1      | 255.255.255.0     | Ciudad A |
+| RouterA     | Serial0/0/0      | 10.0.0.1         | 255.255.255.252   | -        |
+| RouterB     | Gig0/0           | 192.168.2.1      | 255.255.255.0     | Ciudad B |
+| RouterB     | Serial0/0/0      | 10.0.0.2         | 255.255.255.252   | -        |
+| PC0         | -                | 192.168.1.10     | 255.255.255.0     | Ciudad A |
+| PC1         | -                | 192.168.1.11     | 255.255.255.0     | Ciudad A |
+| PC2         | -                | 192.168.2.10     | 255.255.255.0     | Ciudad B |
+| PC3         | -                | 192.168.2.11     | 255.255.255.0     | Ciudad B |
+
+---
+
+### Configuración de Router A
+
+```bash
+enable
+configure terminal
+
+interface GigabitEthernet0/0
+ ip address 192.168.1.1 255.255.255.0
+ no shutdown
+
+interface Serial0/0/0
+ ip address 10.0.0.1 255.255.255.252
+ clock rate 64000
+ no shutdown
+
+ip route 192.168.2.0 255.255.255.0 10.0.0.2
+
+end
+write memory
+```
+```bash
+enable
+configure terminal
+
+interface GigabitEthernet0/0
+ ip address 192.168.2.1 255.255.255.0
+ no shutdown
+
+interface Serial0/0/0
+ ip address 10.0.0.2 255.255.255.252
+ no shutdown
+
+ip route 192.168.1.0 255.255.255.0 10.0.0.1
+
+end
+write memory
+```
 ---
 
 ## Ejercicio 2 - "Los Canales Secretos de la Red Perdida" 🌐
