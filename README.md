@@ -60,6 +60,9 @@ Bajo retardo: UDP permite una transmisión más rápida de datos al no requerir 
 
 No garantiza entrega ni orden: A diferencia de TCP, UDP no asegura que los paquetes lleguen a su destino ni que lo hagan en el orden correcto. Esto puede ser problemático en aplicaciones donde la secuenciación de los datos es importante.
 
+![Comparación de Protocolos de Comunicación_ TCP y UDP - visual selection](https://github.com/user-attachments/assets/0c47532b-f9cd-4dcd-9e92-2c3d48056682)
+
+
 ---
 
 ## Pregunta 3: El Enigma de las Subredes
