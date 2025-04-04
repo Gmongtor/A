@@ -1,5 +1,7 @@
 # Examen de Redes II  
+
 ---
+
 # Parte I: Conceptos y Teoría
 
 ---
@@ -8,7 +10,7 @@
 
 **¿Qué representa el mural de las siete capas en términos de las redes de comunicación modernas? Identifica brevemente cada capa y explica cómo se relaciona este antiguo “modelo” con el proceso de comunicación de datos actual.**
 
-El mural representa el **Modelo OSI (Open Systems Interconnection)**, que divide el proceso de comunicación en redes en 7 capas. Cada capa tiene funciones específicas que ayudan a estandarizar la comunicación entre sistemas.
+El mural de las siete capas es una representación del Modelo OSI (Open Systems Interconnection), un marco conceptual que divide el proceso de comunicación en redes en siete capas distintas. Este modelo es fundamental para entender cómo se estandariza la comunicación entre diferentes sistemas y tecnologías en el ámbito de las redes modernas. A continuación, se describen brevemente cada una de las capas y su relación con el proceso de comunicación de datos actual.
 
 | Capa | Nombre             | Función principal                                                              |
 |------|--------------------|--------------------------------------------------------------------------------|
@@ -40,10 +42,23 @@ El mural representa el **Modelo OSI (Open Systems Interconnection)**, que divide
 | Velocidad             | Menor                                 | Mayor                             |
 | Aplicaciones típicas  | Web, email, FTP, SSH                  | Streaming, VoIP, juegos online    |
 
-- **Ventaja de TCP**: Fiabilidad en la entrega.  
-- **Desventaja de TCP**: Mayor sobrecarga y latencia.  
-- **Ventaja de UDP**: Bajo retardo, ideal para tiempo real.  
-- **Desventaja de UDP**: No garantiza entrega ni orden.
+Ventajas y Desventajas
+
+#### Ventajas de TCP
+
+Fiabilidad en la entrega: TCP asegura que los datos lleguen correctamente al destino mediante el uso de acuses de recibo (ACK) y mecanismos de control de errores. Esto es crucial para aplicaciones donde la integridad de los datos es fundamental, como en la transferencia de archivos o en correos electrónicos.
+
+#### Desventajas de TCP
+
+Mayor sobrecarga y latencia: Debido a sus características de fiabilidad y control, TCP introduce una mayor sobrecarga en la red, lo que puede resultar en latencias más altas. Esto puede ser un inconveniente en aplicaciones que requieren una respuesta rápida.
+
+#### Ventajas de UDP
+
+Bajo retardo: UDP permite una transmisión más rápida de datos al no requerir la confirmación de entrega ni el control de errores. Esto lo hace ideal para aplicaciones en tiempo real como streaming de video, VoIP y juegos en línea, donde la velocidad es más crítica que la fiabilidad.
+
+#### Desventajas de UDP
+
+No garantiza entrega ni orden: A diferencia de TCP, UDP no asegura que los paquetes lleguen a su destino ni que lo hagan en el orden correcto. Esto puede ser problemático en aplicaciones donde la secuenciación de los datos es importante.
 
 ---
 
