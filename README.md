@@ -100,9 +100,9 @@ No garantiza entrega ni orden: A diferencia de TCP, UDP no asegura que los paque
 
 #### Enrutamiento Estático vs Enrutamiento Dinámico
 
-**Flechas talladas en piedra:** Representan el enrutamiento estático, donde las rutas son configuradas manualmente por un administrador de red. Estas rutas son estables y no cambian a menos que se realice una intervención manual. Esto puede ser beneficioso en entornos donde las rutas son predecibles y no cambian con frecuencia.
+-**Flechas talladas en piedra:** Representan el enrutamiento estático, donde las rutas son configuradas manualmente por un administrador de red. Estas rutas son estables y no cambian a menos que se realice una intervención manual. Esto puede ser beneficioso en entornos donde las rutas son predecibles y no cambian con frecuencia.
 
-**Flechas móviles:** Simbolizan el enrutamiento dinámico, donde las rutas son aprendidas automáticamente por el router a través de protocolos de enrutamiento como RIP (Routing Information Protocol) o OSPF (Open Shortest Path First). Estas rutas se actualizan automáticamente en respuesta a cambios en la topología de la red, lo que permite una mayor flexibilidad y adaptabilidad en entornos de red más complejos.
+-**Flechas móviles:** Simbolizan el enrutamiento dinámico, donde las rutas son aprendidas automáticamente por el router a través de protocolos de enrutamiento como RIP (Routing Information Protocol) o OSPF (Open Shortest Path First). Estas rutas se actualizan automáticamente en respuesta a cambios en la topología de la red, lo que permite una mayor flexibilidad y adaptabilidad en entornos de red más complejos.
 
 ![La Encrucijada de las Rutas_ Un Análisis del Enrutamiento en Redes Modernas - visual selection](https://github.com/user-attachments/assets/0bb8efd5-f347-4cb9-829f-5998a0eb8dac)
 
