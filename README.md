@@ -180,6 +180,8 @@ ip route 192.168.2.0 255.255.255.0 10.0.0.2
 end
 write memory
 ```
+### Configuración de Router B
+
 ```bash
 enable
 configure terminal
